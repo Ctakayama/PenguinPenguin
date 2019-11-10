@@ -1,9 +1,68 @@
 body{
-    background-color: aquamarine;
+    background-color: #4CFFAE
 }
 h1{
-    color: deeppink;
+    color: #326771;
 }
 p{
-    color: firebrick;
+    color: #326771;
 }
+
+/*side bar*/
+.sidenav{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(7, 78, 63); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/*side bar rows*/
+.row-sm-4{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #326771;
+    transition-property: background;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.row-sm-4:hover{
+    background-color: wheat;
+}
+
+/*center text*/
+.text-center{
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.text-center:hover{
+    background-color: wheat;
+}
+
+.box{
+    background-color: firebrick;
+    width: 200px;
+    height: 10px;
+    position: relative;
+    animation-name: swooshFromLeft;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes swooshFromLeft{
+    0% {left: 0px; top:0px;}
+
+    100% {left: 300px; top:0px;}
+}
+
+
